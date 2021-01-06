@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/img/home.png">
+    <title>LIST | MyWebiste</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/send_url.js"></script>
+  </head>
+  <body>
+    <header>
+      <a class="header-logo" href="/">Home</a>
+      <a class="header-logo" href="/hello">Hello</a>
+      <a class="header-logo" href="/index">LIST</a>
+    </header>
+    
+    <div class="container">
+      <% var i = 1 %>
+      
+      <div class="container-header">
+        <h1>Daftar Belanjaan</h1>
+        <a href="/new" class="new-button">+ Create new</a>
+      </div>
+      
+      <div class="index-table-wrapper">
+        
+        <div class="table-head">
+          <span class="id-column">ID</span>
+          <span>Item</span>
+        </div>
+        <!-- Mendefinisikan daftar dengan javascritp -->
+        <ul class="table-body">
+        	<% items.forEach((item) => { %>
+	          <li>
+              <div class="item-data">
+  	            <span class="id-column"><%= i++ %></span>
+  	            <span class="name-column"><%= item.name %></span>
+              </div>
+              <div class="item-menu">
+                <form action="/delete/<%= item.id %>" method="post">
+                  <input type="submit" value="Hapus">
+                </form>
+                <form action="/edit/<%= item.id %>" method="get">
+                  <input type="submit" value="Edit">
+                </form>
+              </div>
+	          </li>
+          	 <% }) %>
+        </ul>
+
+
+      </div>
+    </div>
+  </body>
+</html>
