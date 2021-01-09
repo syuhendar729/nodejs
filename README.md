@@ -3,21 +3,18 @@ Membuat web aplication serta fitur CRUD sederhana dengan node.js
 -
 # Requirment installation
 - Node.js
-- Express.js
-- Mysql database
+- Mysql database & phpmyadmin
 
 # Clone my project
 `git clone https://github.com/syuhendar729/nodejs.git`
 
-# Use my project
+# Import database
+import database `nodejs.sql` on phpmyadmin
 
+# Run app
 ```
 cd nodejs
 node app.js
 ```
 Open your browser and type `localhost:3000`
-
-# Import database
-import database `nodejs.sql` on phpmyadmin
-
 
