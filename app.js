@@ -7,6 +7,8 @@ app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: false }));
 
+// ./node_modules/.bin/nodemon
+
 const connection = mysql.createConnection({
 	host: "localhost",
 	user: "root",
