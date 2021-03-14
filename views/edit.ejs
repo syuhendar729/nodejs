@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-    <link rel="icon" href="/img/home.png">
-	<title>Edit | MyWebsite</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/img/home.png" />
+    <title>Edit | MyWebsite</title>
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="/send_url.js"></script>
-</head>
-<body>
-	<header>
+  </head>
+  <body>
+    <header>
       <a class="header-logo" href="/">Home</a>
       <a class="header-logo" href="/hello">Hello</a>
       <a class="header-logo" href="/index">LIST</a>
@@ -19,15 +19,15 @@
       </div>
       <div class="item-form-wrapper">
         <p class="form-label">Item</p>
-        
+
         <form action="/update" method="post">
-          <input type="hidden" name="itemId" value="<%= item.id %>">
-        	<input type="text" style="width: 200px; height: 30px;" name="itemName" value="<%= item.name %>">
-        	<input type="submit" class="new-button" value="Update">
+          <input type="hidden" name="itemId" value="<%= item.id %>" />
+          <input type="text" style="width: 200px; height: 30px" name="itemName" value="<%= item.name %>" />
+          <input type="submit" class="new-button" value="Update" />
         </form>
-      
+
+        <a href="/index" class="cancel-button"><b>&laquo; batal</b></a>
       </div>
-      <a href="/index" class="cancel-button"><b>Batal</b></a>
     </div>
-</body>
+  </body>
 </html>

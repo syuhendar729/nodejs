@@ -12,7 +12,8 @@ html {
 
 body {
   margin: 0;
-  background-color: #f6faff;
+  /* background-color: #1f3e64; */
+  background-image: url("../img/bg-nodejs.jpg");
   color: #6c7686;
 }
 
@@ -195,12 +196,12 @@ header {
 /* index ================================ */
 .table-head {
   display: flex;
-  background-color: #b7cadc;
+  background-color: #121518;
   border-radius: 2px 2px 0 0;
   height: 44px;
   font-size: 16px;
   line-height: 46px;
-  color: #ffffff;
+  color: #85918d;
 }
 
 .id-column {
@@ -209,7 +210,7 @@ header {
 }
 
 .table-body {
-  background-color: #ffffff;
+  background-color: #1d2127;
 }
 
 .table-body li {
@@ -277,7 +278,7 @@ header {
 
 /* new, edit ================================ */
 .item-form-wrapper {
-  background-color: #ffffff;
+  background-color: #1d2127;
   border: 1px solid #f0f4f9;
   border-radius: 0px 0px 2px 2px;
   padding: 32px;
