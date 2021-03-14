@@ -10,10 +10,10 @@ app.use(express.urlencoded({ extended: false }));
 // ./node_modules/.bin/nodemon
 
 const connection = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "729729",
-	database: "nodejs",
+	host: "byzisrgxy8aldvqs2cmz-mysql.services.clever-cloud.com",
+	user: "u4bqg33splxnstla",
+	password: "xrqK79OhUMUCgj9QLKDk",
+	database: "byzisrgxy8aldvqs2cmz",
 });
 
 app.get("/", (req, res) => {
